@@ -1,0 +1,259 @@
+
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \small #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \small #2\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+\def\CC{{C\nolinebreak[4]\hspace{-.05em}\raisebox{.4ex}{\tiny\bf ++}}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+
+\begin{center}
+    {\Huge \scshape Michael \underline{Hoon} Yong Hau} \\ \vspace{8pt}
+    \small \raisebox{-0.1\height}\faPhone\ +65 97769494 $\vert$ \hspace*{0.1pt} \href{mailto:michael_hoon@mymail.sutd.edu.sg}{\raisebox{-0.2\height}\faEnvelope\  \underline{michael\_hoon@mymail.sutd.edu.sg}} \hspace*{0.1pt} $\vert$ \hspace*{0.1pt} 
+    \href{https://linkedin.com/in/michaelhoon}{\raisebox{-0.2\height}\faLinkedin\ \underline{linkedin.com/in/michaelhoon}} \hspace*{0.1pt} $\vert$ \hspace*{0.1pt}
+    \href{https://github.com/michael-hoon}{\raisebox{-0.2\height}\faGithub\ \underline{github.com/michael-hoon}}
+    % \vspace{-8pt}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Singapore University of Technology and Design}{May 2026 -- Dec. 2026}
+      {Master of Engineering (Research)}{(Expected)}
+    \resumeSubheading
+      {Singapore University of Technology and Design}{Sep. 2022 -- May 2026}
+      {Bachelor of Engineering, Engineering Systems and Design, Minor in Computer Science}{Current GPA: 4.83/5.0}
+    \resumeSubheading
+    {University of California, Berkeley}{Jun. 2023 -- Aug. 2023}
+    {Summer Exchange, Econometric Analysis}{Berkeley, CA}
+  \resumeSubHeadingListEnd
+% \vspace{-15pt}
+
+%------RELEVANT COURSEWORK-------
+\section{Coursework / Certifications}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{3}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small Machine Learning  
+                \item Optimization
+                \item Natural Language Processing
+                \item Applied Econometrics
+                \item Data Science 
+                \item Data \& Business Analytics
+            \end{itemize}
+        \end{multicols}
+        % \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
+%
+
+%-----------PROJECTS-----------
+\section{Projects}
+    % \vspace{-5pt}
+    
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{FinSight.AI} $|$ \emph{Python, LangChain, Streamlit}}{Mar. 2024 -- Mar. 2024}
+          \resumeItemListStart
+            \resumeItem{Industry project with Temasek Holdings (Financial Services Department): Large Language Model (LLM) enabled Financial Analysis Assistant, scalable with existing in-house data infrastructure.}
+            \resumeItem{Summarizes multiple unstructured financial reports and key metrics with internal data, reducing man-hours by 80\%. Able to retrieve metadata of reports and allow user to self-verify accuracy, and provide semantic score results.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+    \resumeSubHeadingListEnd
+
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{LangChain PDF Querying Assistant} $|$ \emph{Python, LangChain, Streamlit, Docker}}{Sep. 2023 -- Nov. 2023}
+          \resumeItemListStart
+            \resumeItem{Developed a Querying System Chatbot via LangChain, for Question-Answering (QA) over PDFs.}
+            \resumeItem{Feasible use cases include summarisation of large PDF articles in academia, and document management systems.}
+            \resumeItem{Application hosted and deployed on Streamlit webapp, containerised using Docker.}
+          \resumeItemListEnd
+          % \vspace{-13pt}
+    \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Natural Language Processing Engineer Intern}{Mar. 2024 -- Present}
+      {DSO National Laboratories}{Singapore}
+      \resumeItemListStart
+        \resumeItem{Building production-ready Retrieval Augmented Generation pipeline for ingesting of multiple unstructured documents, with open-sourced local LLMs via Ollama, }
+        \resumeItem{} 
+        \resumeItem{}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Data Analyst}{Jan. 2024 -- Apr. 2024}
+      {Poh Tiong Choon Logistics Ltd.}{Singapore}
+      \resumeItemListStart
+        \resumeItem{Conducted Exploratory Data Analysis with Python on internal data for delivery driver utilisation. Identified key areas for improvement in scheduling and boosted driver utilisation rates by 20\%.}
+        \resumeItem{Developed end-to-end automated pipeline solution with bash scripting, integrating existing database with Python and Power BI.} 
+        \resumeItem{Created PowerBI Dashboard for key metrics and patterns on route analysis. Wrote internal report discussing findings}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Data Analyst}{Sep. 2022 -- Jan. 2023}
+      {Aviation Studies Institute}{Singapore}
+      \resumeItemListStart
+        \resumeItem{Extracted key business insights for industry partner, International Air Transport Association (IATA), via Exploratory Data Analysis in R, SQL, and Python. Visualised data via Plotly and R.}
+        \resumeItem{Developed correlation models for predictive analysis of internal air cargo demand data.}
+        \resumeItem{Wrote an internal paper discussing findings, and presented to IATA and the Civil Aviation Authority of Singapore.}
+      \resumeItemListEnd
+
+    % \resumeSubheading
+    %   {Undergraduate Research Assistant}{Oct. 2022 -- Dec. 2023}
+    %   {Singapore University of Technology and Design}{Singapore}
+    %   \resumeItemListStart
+    %     \resumeItem{Explored computational modelling of materials via the Particle-In-Cell (PIC) and Finite-Difference-Time-Domain (FDTD) methods, and conducted qualitative analysis on resulting spectra.}
+    %     \resumeItem{Research showed similar scattering patterns and Lorentzian behaviour, and will contribute to further studies in simulating optoelectronic devices.}
+    %     \resumeItem{Worked with open-source code developed in Python using the MEEP library, and PIC algorithm developed via Epoch.}
+    % \resumeItemListEnd
+  \resumeSubHeadingListEnd
+    % \resumeSubheading
+    %   {Research Intern}{Mar. 2018 -- Apr. 2019}
+    %   {Satellite Research Centre (SaRC), Nanyang Technological University}{Singapore}
+    %   \resumeItemListStart
+    %     \resumeItem{Worked on SCOOB-I, a student-built satellite, with main mission to detect and characterise the electromagnetic spectral emissions of the Sun and Earth in the Near-Infrared, Visible, and Ultraviolet spectrum ranges.}
+    %     \resumeItem{Designed the Electrical Interfacing architecture of SCOOB-I's subsystems and its numerous research payloads, and explored hardware considerations for a 3U CubeSat in Low-Earth Orbit.}
+    %     \resumeItem{SCOOB-I was launched by ISRO's PSLV C-53 mission on 30th June 2022, and is Singapore’s first Heliophysics mission.}
+    % \resumeItemListEnd
+% \vspace{-20pt}
+
+% \vspace{-18pt}
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+      \small{\item{
+      \textbf{Languages}{: Python, R, SQL, Julia, \LaTeX} \\
+      \textbf{Tools}{: Git/GitHub, Docker, Ollama, Streamlit, DBeaver, VS Code, Linux, WSL, Excel, Power BI} \\
+      \textbf{Libraries/Frameworks}{: LangChain, OpenAI API, Pandas, NumPy, Seaborn, scitkit-learn, Plotly, tidyverse (R)}  \\
+      }}
+  \end{itemize} 
+% \vspace{-18pt}
+
+%-----------INVOLVEMENT---------------
+% \section{Extracurricular}
+%     \resumeSubHeadingListStart
+%         \resumeSubheading{SUTD Organisation of Autonomous Robotics}{Mar. 2023 -- Feb. 2024}{Secretary}{Singapore University of Technology and Design}
+%             \resumeItemListStart
+%                 \resumeItem{Organised a school-wide robotics competition (RoboClash 2024), attracting over 80 participants and 15 teams.}
+%                 \resumeItem{Collaborated with school administration on all administrative matters related to the club, conducted school-wide workshops to inspire robotics technology among students.}
+% %                \resumeItem{Spearheaded and led a new robotics research project, working on Multi-Agent Reinforcement Learning.}
+%             \resumeItemListEnd
+%     \resumeSubHeadingListEnd
+% \vspace{-18pt}
+
+
+
+\end{document}
