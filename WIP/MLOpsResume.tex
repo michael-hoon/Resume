@@ -1,5 +1,3 @@
-
-
 \documentclass[letterpaper,11pt]{article}
 
 \usepackage{latexsym}
@@ -128,7 +126,7 @@
   \resumeSubHeadingListStart
     \resumeSubheading
       {Singapore University of Technology and Design}{May 2026 -- Dec. 2026}
-      {Master of Engineering (Research)}{(Expected)}
+      {Master of Engineering (Research), Artificial Intelligence}{(Expected)}
     \resumeSubheading
       {Singapore University of Technology and Design}{Sep. 2022 -- May 2026}
       {Bachelor of Engineering, Engineering Systems and Design, Minor in Computer Science}{Current GPA: 4.83/5.0}
@@ -138,59 +136,18 @@
   \resumeSubHeadingListEnd
 % \vspace{-15pt}
 
-%------RELEVANT COURSEWORK-------
-\section{Coursework / Certifications}
-    %\resumeSubHeadingListStart
-        \begin{multicols}{3}
-            \begin{itemize}[itemsep=-5pt, parsep=3pt]
-                \item\small Machine Learning  
-                \item Optimization
-                \item Natural Language Processing
-                \item Applied Econometrics
-                \item Data Science 
-                \item Data \& Business Analytics
-            \end{itemize}
-        \end{multicols}
-        % \vspace*{2.0\multicolsep}
-    %\resumeSubHeadingListEnd
 
-%
-
-%-----------PROJECTS-----------
-\section{Projects}
-    % \vspace{-5pt}
-    
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{FinSight.AI} $|$ \emph{Python, LangChain, Streamlit}}{Mar. 2024 -- Mar. 2024}
-          \resumeItemListStart
-            \resumeItem{Industry project with Temasek Holdings (Financial Services Department): Large Language Model (LLM) enabled Financial Analysis Assistant, scalable with existing in-house data infrastructure.}
-            \resumeItem{Summarizes multiple unstructured financial reports and key metrics with internal data, reducing man-hours by 80\%. Able to retrieve metadata of reports and allow user to self-verify accuracy, and provide semantic score results.}
-          \resumeItemListEnd
-          \vspace{-13pt}
-    \resumeSubHeadingListEnd
-
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{LangChain PDF Querying Assistant} $|$ \emph{Python, LangChain, Streamlit, Docker}}{Sep. 2023 -- Nov. 2023}
-          \resumeItemListStart
-            \resumeItem{Developed a Querying System Chatbot via LangChain, for Question-Answering (QA) over PDFs.}
-            \resumeItem{Feasible use cases include summarisation of large PDF articles in academia, and document management systems.}
-            \resumeItem{Application hosted and deployed on Streamlit webapp, containerised using Docker.}
-          \resumeItemListEnd
-          % \vspace{-13pt}
-    \resumeSubHeadingListEnd
 
 %-----------EXPERIENCE-----------
 \section{Experience}
   \resumeSubHeadingListStart
     \resumeSubheading
-      {Natural Language Processing Engineer Intern}{Mar. 2024 -- Present}
+      {Natural Language Processing Engineer Intern}{Mar. 2024 -- Dec. 2024}
       {DSO National Laboratories}{Singapore}
       \resumeItemListStart
-        \resumeItem{Building production-ready Retrieval Augmented Generation pipeline for ingesting of multiple unstructured documents, with open-sourced local LLMs via Ollama, }
-        \resumeItem{} 
-        \resumeItem{}
+        \resumeItem{Built production-ready Retrieval Augmented Generation (RAG) pipeline for ingesting of multiple internal unstructured documents, with local LLMs (Llama3) via Ollama and LangChain.}
+        \resumeItem{Implemented Advanced RAG techniques for complex documents, experimented with multi-modal methods for image and table parsing capabilities. Evaluated models via LangSmith.} 
+        \resumeItem{Deployed and containerised models via Docker for internal document use }
       \resumeItemListEnd
 
     \resumeSubheading
@@ -198,7 +155,7 @@
       {Poh Tiong Choon Logistics Ltd.}{Singapore}
       \resumeItemListStart
         \resumeItem{Conducted Exploratory Data Analysis with Python on internal data for delivery driver utilisation. Identified key areas for improvement in scheduling and boosted driver utilisation rates by 20\%.}
-        \resumeItem{Developed end-to-end automated pipeline solution with bash scripting, integrating existing database with Python and Power BI.} 
+        \resumeItem{Developed end-to-end automated pipeline solution for data cleaning and analysis with bash scripting, integrating existing database with Python and Power BI, significantly reducing working man-hours.} 
         \resumeItem{Created PowerBI Dashboard for key metrics and patterns on route analysis. Wrote internal report discussing findings}
       \resumeItemListEnd
 
@@ -206,9 +163,9 @@
       {Data Analyst}{Sep. 2022 -- Jan. 2023}
       {Aviation Studies Institute}{Singapore}
       \resumeItemListStart
-        \resumeItem{Extracted key business insights for industry partner, International Air Transport Association (IATA), via Exploratory Data Analysis in R, SQL, and Python. Visualised data via Plotly and R.}
-        \resumeItem{Developed correlation models for predictive analysis of internal air cargo demand data.}
-        \resumeItem{Wrote an internal paper discussing findings, and presented to IATA and the Civil Aviation Authority of Singapore.}
+        \resumeItem{Extracted key business insights for industry partner, International Air Transport Association (IATA), via Exploratory Data Analysis in R, SQL, and Python. Conducted qualitative analysis of air cargo demand in Southeast Asia.}
+        \resumeItem{Developed correlation models for predictive analysis of internal air cargo demand data, with open-sourced economic data. Evaluated hypothesis on key drivers of regional air cargo demand.}
+        \resumeItem{Wrote an internal paper discussing findings, presented to IATA and the Civil Aviation Authority of Singapore.}
       \resumeItemListEnd
 
     % \resumeSubheading
@@ -231,13 +188,66 @@
 % \vspace{-20pt}
 
 % \vspace{-18pt}
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{BrainHack 2024} $|$ \emph{Python, PyTorch, Docker}}{May. 2024 -- May. 2024}
+          \resumeItemListStart
+            \resumeItem{Utilised transfer learning techniques for fine tuning of pre-trained Automatic Speech Recognition (ASR) and LLMs on a large corpus of audio and transcript data. Developed a model capable of understanding natural language commands}
+            \resumeItem{Implemented Vision Transformers (ViT) for automated bounding-box generation of targets in image data based on natural language transcript provided by the LLM.}
+            \resumeItem{Containerised and deployed models via Docker and FastAPI for evaluation of model accuracy on leaderboard ranking.}
+          \resumeItemListEnd
+          \vspace{-25pt}
+    \resumeSubHeadingListEnd
+
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{FinSight.AI} $|$ \emph{Python, LangChain, Streamlit}}{Mar. 2024 -- Mar. 2024}
+          \resumeItemListStart
+            \resumeItem{Industry project with Temasek Holdings (Financial Services Department): Large Language Model (LLM) enabled Financial Analysis Assistant via RAG, scalable with existing in-house data infrastructure.}
+            \resumeItem{Summarizes multiple unstructured financial reports and key metrics with internal data, reducing man-hours by 80\%. Able to retrieve metadata of reports and allow user to self-verify accuracy, and provide semantic score results.}
+          \resumeItemListEnd
+          % \vspace{-5pt}
+    \resumeSubHeadingListEnd
+
+    % \resumeSubHeadingListStart
+    %   \resumeProjectHeading
+    %       {\textbf{LangChain PDF Querying Assistant} $|$ \emph{Python, LangChain, Streamlit, Docker}}{Sep. 2023 -- Nov. 2023}
+    %       \resumeItemListStart
+    %         \resumeItem{Developed a Querying System Chatbot via LangChain, for Question-Answering (QA) over PDFs.}
+    %         \resumeItem{Feasible use cases include summarisation of large PDF articles in academia, and document management systems.}
+    %         \resumeItem{Application hosted and deployed on Streamlit webapp, containerised using Docker.}
+    %       \resumeItemListEnd
+    %       % \vspace{-13pt}
+    % \resumeSubHeadingListEnd
+
+\newpage
+
+%------RELEVANT COURSEWORK-------
+\section{Coursework / Certifications}
+    %\resumeSubHeadingListStart
+        \begin{multicols}{3}
+            \begin{itemize}[itemsep=-5pt, parsep=3pt]
+                \item\small Machine Learning  
+                \item Optimization
+                \item Natural Language Processing
+                \item Applied Econometrics
+                \item Data Science 
+                \item Data \& Business Analytics
+            \end{itemize}
+        \end{multicols}
+        % \vspace*{2.0\multicolsep}
+    %\resumeSubHeadingListEnd
+
 %-----------PROGRAMMING SKILLS-----------
 \section{Skills}
   \begin{itemize}[leftmargin=0.15in, label={}]
       \small{\item{
       \textbf{Languages}{: Python, R, SQL, Julia, \LaTeX} \\
-      \textbf{Tools}{: Git/GitHub, Docker, Ollama, Streamlit, DBeaver, VS Code, Linux, WSL, Excel, Power BI} \\
-      \textbf{Libraries/Frameworks}{: LangChain, OpenAI API, Pandas, NumPy, Seaborn, scitkit-learn, Plotly, tidyverse (R)}  \\
+      \textbf{Tools}{: Git/GitHub, Docker, Ollama, VS Code, Vim, DBeaver, Linux, WSL, Excel, Power BI} \\
+      \textbf{Libraries/Frameworks}{: LangChain, Streamlit, HuggingFace, PyTorch, Pandas, NumPy, Seaborn, scitkit-learn, Plotly, tidyverse (R)}  \\
       }}
   \end{itemize} 
 % \vspace{-18pt}
