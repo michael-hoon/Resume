@@ -1,9 +1,9 @@
-PWD /home/micha/resume/Resume
+PWD /home/micha/resume/Resume/WIP
 INPUT /etc/texmf/web2c/texmf.cnf
 INPUT /usr/share/texmf/web2c/texmf.cnf
 INPUT /usr/share/texlive/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
-INPUT /home/micha/resume/Resume/MLOpsResume.tex
+INPUT /home/micha/resume/Resume/WIP/MLOpsResume.tex
 OUTPUT MLOpsResume.log
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/share/texlive/texmf-dist/tex/latex/base/article.cls
